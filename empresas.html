@@ -1,32 +1,55 @@
+<!DOCTYPE html> <!--empresas.html -->
 <html>
-     <head>
-         <link rel="stylesheet" href="css/bootstrap.css">
 
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width">
-         <title>Empresas</title>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Envie a sua oportunidade</title>
+	</head>
 
-         <link rel="stylesheet" href="open-iconic-master/font/css/open-iconic-bootstrap.css">
+			<body>
 
-     </head>
-     <body>
-            <div class="jumbotron jumbotron-fluid">
-             <div class="container">
+ 			<div class="jumbotron jumbotron-fluid">
+          <div class="container">     
+          <h1 class="display-4">Envie a sua oportunidade</h1>
+          <p class="lead">CAMPOS</p>
+          </div>
 
 
-         <h1 class="display-4">Envie a sua oportunidade</h1>
+
+				<form action="troca_valor.php" method="post">
+			<div class="form-group">
+         <label for="cargo">Cargo</label>
+         <select class="custom-select" id="cargo">
+             <option disabled selected>Selecione o cargo...</option>
+             <option value="master">Assistente Administrativo</option>
+             <option value="visa">Recepcionista</option>
+             <option value="amex">Auxiliar Administrativo</option>
+         </select>
+
+
+
+			<label>Descrição<label>
+				<input type="text" name="Descrição">
+
+				 <div class="form-group">
+             <label for="local">Local</label>
+             <input type="local" class="form-control" id="local" name="local" placeholder="Rua exemplo, 000">
+
     
-         <div class="container">
+				<div class="form-group">
+         <label for="salario">Salário</label>
+         <select class="custom-select" id="salario">
+             <option disabled selected>Selecione o salário...</option>
+             <option value="minimo">R$ 950,00 a 1.200,00</option>
+             <option value="medio">R$ 1.400,00 a R$ 2.000,00</option>
+             <option value="alto">R$ 3.500,00 a R$ 5.000,00</option>
+         </select>
+				<input type="submit" value="OK"> 
 
-                         <div class="card mb-3">
 
-                <div class="card-header">
-                    <h2>Cargo:</h2>
-                    <h2>Descrição:</h2>
-                    <h2>Local:</h2>
-                    <h2>Salário:</h2>
-                
-                </div>
 
-     </body>
- </html>
+				</form>
+		
+			</body>
+</html>
